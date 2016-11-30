@@ -1,42 +1,42 @@
 Git 활용법
 
 
-(출처) https://www.youtube.com/playlist?list=PLuHgQVnccGMCB06JE7zFIAOJtdcZBVrap  
-(날짜) 2016년 11월 30일  
-(위치) ~/dev/tutorials/mygitb/git활용  
-(Git) 계정, tryleo를 만들었음  
+(출처) https://www.youtube.com/playlist?list=PLuHgQVnccGMCB06JE7zFIAOJtdcZBVrap
+(날짜) 2016년 11월 30일
+(위치) ~/dev/tutorials/mygitb/git활용
+(Git) 계정, tryleo를 만들었음
 
 
-git은 협업과 버전관리 도구이다.  
-github는 git의 버전을 저장해 주는 원격 관리소이다.   
+git은 협업과 버전관리 도구이다.
+github는 git의 버전을 저장해 주는 원격 관리소이다. 
 
 
-협업: git과 github를 연결하여 여러 사람이 공동작업할 때는 개별 작업자는 git에서 다음의 순서를 지켜야 한다.   
-일단, 작업 시작 시에는 협업자가 변경한 것이 있을 수 있으므로 먼저 pull하는 습관을 들이는 것이 좋다.   
+협업: git과 github를 연결하여 여러 사람이 공동작업할 때는 개별 작업자는 git에서 다음의 순서를 지켜야 한다. 
+일단, 작업 시작 시에는 협업자가 변경한 것이 있을 수 있으므로 먼저 pull하는 습관을 들이는 것이 좋다. 
 
-다음 순서는 대단히 중요하다:   
-pull -> work -> commit -> pull -> push  
+다음 순서는 대단히 중요하다: 
+pull -> work -> commit -> pull -> push
 
-.pull: 일단, 원격에서 받아옴  
-.work: 로컬에서 작업을 수행  
-.commit: 작업을 로컬에 commit해서 버전을 만듬  
-.pull: 내가 작업하는 동안 협업자가 그동안 작업해서 원격에 변경이 있을 수 있으므로 다시 당겨옴. 내가 작업한 것과 당겨온 것을 병합하여 검토 후에 올려야 함.    
-.push: 검토 결과를 다시 올림  
-
-
-여기서 저장소(repository), 원격저장소(remote repository), commit(작업한 것을 버전으로 반영), push(로컬->원격), pull(원격->로컬) 등의 용어 이해 필요함.   
-
-자주 원격 저장소와 동기화해야 conflict 상황을 줄일 수 있다.   
-같은 파일을 수정할 때는 conflict가 생겼다면 commit을 나중에 한 사람이 해결할 책임을 진다. 따라서, 협업 시에는 먼저, 자주 하는 것이 요구된다.    
+.pull: 일단, 원격에서 받아옴
+.work: 로컬에서 작업을 수행
+.commit: 작업을 로컬에 commit해서 버전을 만듬
+.pull: 내가 작업하는 동안 협업자가 그동안 작업해서 원격에 변경이 있을 수 있으므로 다시 당겨옴. 내가 작업한 것과 당겨온 것을 병합하여 검토 후에 올려야 함.  
+.push: 검토 결과를 다시 올림
 
 
+여기서 저장소(repository), 원격저장소(remote repository), commit(작업한 것을 버전으로 반영), push(로컬->원격), pull(원격->로컬) 등의 용어 이해 필요함. 
+
+자주 원격 저장소와 동기화해야 conflict 상황을 줄일 수 있다. 
+같은 파일을 수정할 때는 conflict가 생겼다면 commit을 나중에 한 사람이 해결할 책임을 진다. 따라서, 협업 시에는 먼저, 자주 하는 것이 요구된다. 
 
 
-되돌리기 4: Reset  
-여러번 commit했는데 중간쯤으로 되돌아가고 그 이후 작업은 무시하고 싶을 때,  
-임의 버전 위치의  마우스 클릭->Reset current branch to this commit->Hard discard all working 선택  
-그러면 뒤에 이루어진 commit는 모두 제거됨.  
-  
+
+
+되돌리기 4: Reset
+여러번 commit했는데 중간쯤으로 되돌아가고 그 이후 작업은 무시하고 싶을 때,
+임의 버전 위치의  마우스 클릭->Reset current branch to this commit->Hard discard all working 선택
+그러면 뒤에 이루어진 commit는 모두 제거됨.
+
 파일 수정과 파일 저장까지 했을 때, commit하기 직전에 수정한 것을 취소하려 하면, 
 File status->Unstaged file->Discard file 선택
 

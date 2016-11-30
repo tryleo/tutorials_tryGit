@@ -1,15 +1,15 @@
-Git 활용법
+Git 사용법 (새 계정)
 
 
 (출처) https://www.youtube.com/playlist?list=PLuHgQVnccGMCB06JE7zFIAOJtdcZBVrap
-(날짜) 2016년 11월 30일
-(위치) ~/dev/tutorials/mygitb/git활용
+(날짜) 2016년 11월 25일
+(위치) ~/dev/tutorials/mygitb
 (Git) 계정, tryleo를 만들었음
+
 
 
 git은 협업과 버전관리 도구이다.
 github는 git의 버전을 저장해 주는 원격 관리소이다. 
-
 
 협업: git과 github를 연결하여 여러 사람이 공동작업할 때는 개별 작업자는 git에서 다음의 순서를 지켜야 한다. 
 일단, 작업 시작 시에는 협업자가 변경한 것이 있을 수 있으므로 먼저 pull하는 습관을 들이는 것이 좋다. 
